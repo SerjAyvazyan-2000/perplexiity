@@ -897,6 +897,7 @@ margin-top: 1px;
   .chat-main-cnt {
     flex-direction: column;
     gap: 10px;
+    height: 100vh;
 
   }
 
