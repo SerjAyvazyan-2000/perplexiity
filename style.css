@@ -256,7 +256,6 @@ main {
   min-height: 100svh;  
    height: 100vh;
   height: 100svh;
-  gap: 16px;
   overflow: hidden;
 }
 
@@ -638,6 +637,7 @@ main {
   display: flex;
   align-items: center;
   position: relative;
+  margin-left: 16px;
   justify-content: center;
 }
 .chat-cnt-wrapper {
@@ -913,6 +913,7 @@ margin-top: 1px;
     flex-direction: column;
     gap: 10px;
      min-height: 100%;
+     margin-left: unset;
 
   }
 
