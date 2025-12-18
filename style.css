@@ -252,8 +252,10 @@ main {
   padding: 16px;
   background: #fbfbfb;
   margin: 0 auto;
-   min-height: 100vh; 
-  height: 100vh;
+    min-height: 100vh;  
+  min-height: 100svh;  
+   height: 100vh;
+  height: 100svh;
   gap: 16px;
   overflow: hidden;
 }
@@ -635,8 +637,8 @@ main {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
+  justify-content: center;
 }
 .chat-cnt-wrapper {
   max-width: 728px;
@@ -823,12 +825,12 @@ margin-top: 1px;
 
 @media (max-width: 768px) {
   .p-chat-mobile-tools{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    bottom: 30px;
-    gap: 20px;
-    position: absolute;
+    flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
 
   }
   .p-caht-modal{
@@ -896,20 +898,21 @@ margin-top: 1px;
 
   .chat-wrapper {
     padding: 14px;
+    align-items: unset;
+    justify-content: unset;
   }
   .chat-cnt-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    height: unset;
-    position: relative;
-    justify-content: center;
+    flex: 1 1 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 20px;
   }
   .chat-main-cnt {
     flex-direction: column;
     gap: 10px;
-    height: 100vh;
+     min-height: 100%;
 
   }
 
@@ -939,8 +942,7 @@ margin-top: 1px;
     gap: 10px;
     width: 100%;
     z-index: 2;
-    position: absolute;
-    top: 0;
+
   }
   .chat-header-mobile .icon-chatBurger {
     font-size: 21px;
